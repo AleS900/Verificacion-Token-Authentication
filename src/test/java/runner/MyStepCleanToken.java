@@ -20,7 +20,7 @@ public class MyStepCleanToken {
     RequestInformation requestInformation = new RequestInformation();
     Map<String, String> dynamicVar = new HashMap<>();
 
-    @Given("yo uso la authenticacion de token")
+    @Given("yo estoy usando autenticacion de token")
     public void yoUsoLaAuthenticacionToken() {
         requestInformation.setUrl(Configuration.host + replaceVar("/api/authentication/token.json"))
                 .setBody(replaceVar(""));
